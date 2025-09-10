@@ -2,7 +2,7 @@
 
 ## 📖 Descrição
 
-Este projeto faz parte de uma Iniciação Científica em Ciência da Computação e tem como objetivo **automatizar a extração, processamento e análise de dados de patentes** da Revista da Propriedade Industrial (RPI), publicada semanalmente pelo INPI.
+Este projeto faz parte de uma Iniciação Científica em Ciência da Computação e tem como objetivo **automatizar a extração, processamento e análise de dados de patentes** do site de consultas de patentes do INPI e da Revista da Propriedade Industrial (RPI), publicada semanalmente também pelo INPI.
 O sistema baixa os arquivos da RPI, processa os dados, e reutiliza os números identificadores das patentes, para efetuar um scraping no site de consulta de patentes do INPI, o scraping retorna os dados, que são guaradados e enviados para uma planilha online e organiza para posterior análise.
 
 Além disso, o projeto tem como visão futura a criação de uma **biblioteca Python** que permitirá consultas, filtros, análises e outras funcionalidades diretamente a partir dos dados extraídos.
