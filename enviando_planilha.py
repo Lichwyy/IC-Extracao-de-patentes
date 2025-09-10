@@ -1,6 +1,5 @@
 from acessando_inpi import AcessarInpi
 from time import sleep
-import json
 import requests
 import os
 from dotenv import load_dotenv

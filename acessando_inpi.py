@@ -1,9 +1,13 @@
+import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 from bs4 import BeautifulSoup as bs
+from dotenv import load_dotenv
 
 
+
+load_dotenv()
 
 class AcessarInpi():
     def __init__(self):
@@ -23,8 +27,8 @@ class AcessarInpi():
 
     def fazer_login(self):
         self.navegador.get(self.link_login)
-        self.enviar_dados(By.NAME, 'T_Login', 'phavl')
-        self.enviar_dados(By.NAME, 'T_Senha', '4b4c4xi!')
+        self.enviar_dados(By.NAME, 'T_Login', os.getenv("login"))
+        self.enviar_dados(By.NAME, 'T_Senha', os.getenv("pass"))
         self.clicar(By.XPATH, "//input[@value=' Continuar » ']")
 
     def extraindo_dados(self):
