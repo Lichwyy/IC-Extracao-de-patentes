@@ -82,23 +82,41 @@ Esse script recebe os dados via requisições HTTP e organiza nas abas descritas
 
 ## ▶️ Uso
 
+* Todos os scripts Python estão localizados no diretório `scripts/`.  
+Para executar qualquer um deles, certifique-se de navegar até essa pasta:
+
+  ```bash
+  cd scripts/
+  ```
+
 * Para baixar os PDFs da RPI:
 
   ```bash
-  python baixar_arquivos.py
+  pipenv run python baixar_arquivos.py
   ```
 
 * Para acessar diretamente dados do site do INPI:
 
   ```bash
-  python acessando_inpi.py
+  pipenv run python acessando_inpi.py
   ```
 
 * Para enviar resultados para planilha:
 
   ```bash
-  python enviando_planilha.py
+  pipenv run python enviando_planilha.py
   ```
+
+## ⚙️ Configuração de Variáveis de Ambiente
+
+Este projeto depende de variáveis de ambiente para funcionar corretamente.  
+Antes de rodar os scripts, crie um arquivo `.env` na raiz do projeto com as seguintes chaves:
+
+- `API_URL` → URL da API do Google Apps Script para enviar os dados para a planilha desejada  
+- `LOGIN_USER` → Nome de usuário para acesso do site INPI
+- `LOGIN_PASS` → Senha para acesso do site INPI
+
+Exemplo de conteúdo do arquivo `.env` no arquivo `.env.example`:
 
 ## 📌 Roadmap
 
