@@ -39,9 +39,12 @@ Os dados são organizados em uma planilha online, disponível para leitura neste
 
 A planilha contém três abas principais:
 
-* **Patentes** → principais informações de cada patente.
-* **Classificações** → valores de classificação IPC e CPC.
-* **Prioridades** → informações sobre prioridade unionista.
+* **Patentes** → principais informações de cada patente, organização por indíces que representam os códigos INID
+* **Classificações** → valores de classificação IPC (INID 51) e CPC (INID 52), apresenta descrição de cada classificação.
+* **Prioridades** → informações sobre prioridade unionista, com o país de origem (INID 33), número da prioridade (INID 31), data da solicitação.
+
+* **Tabela com os valores dos INID** → Acesse: [PDF com INID](https://revistas.inpi.gov.br/rpi/download/inids/200)
+
 
 ## ☁️ Integração com Google Sheets
 
